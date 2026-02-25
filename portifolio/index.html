@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Desenvolvedor Fullstack</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <div>
+          <h1>Dev Kaio Ribeiro</h1>
+          <p>Desenvolvedor Fullstack</p>
+        </div>
+        <div>
+          <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+          <button class="theme-toggle" aria-label="Alternar tema">🌙</button>
+          <button class="effect-toggle" aria-label="Alternar efeito">🎭</button>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" data-target="home" class="nav-link">
+                <i class="fas fa-house"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-target="tarefas" class="nav-link">
+                <i class="fas fa-tasks"></i>
+                <span>App de Tarefas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-target="blog" class="nav-link">
+                <i class="fas fa-pen"></i>
+                <span>Blog Pessoal</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-target="api" class="nav-link">
+                <i class="fas fa-film"></i>
+                <span>API de Filmes</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-target="contato" class="nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contato</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="page" data-scroll>
+      <div class="container">
+        <section class="hero" data-scroll>
+          <div class="hero-content">
+            <h2>Construindo soluções modernas para a web</h2>
+            <p>Fullstack developer apaixonado por clean code.</p>
+          </div>
+        </section>
+
+        <section id="sobre" data-scroll>
+          <h2>Sobre Mim</h2>
+          <p>
+            Sou um desenvolvedor fullstack com experiência em aplicações web
+            modernas. Trabalho com Node.js, React, Python, SQL e tecnologias
+            relacionadas.
+          </p>
+        </section>
+
+        <section id="projetos" data-scroll>
+          <h2>Projetos</h2>
+          <div class="projects">
+            <div class="card" data-target="tarefas" data-scroll>
+              <h3>App de Tarefas</h3>
+              <p>
+                Gerenciador de tarefas com frontend React e backend Express.
+              </p>
+              <div class="card-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                  alt="Express"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB"
+                />
+              </div>
+            </div>
+            <div class="card" data-target="blog" data-scroll>
+              <h3>Blog Pessoal</h3>
+              <p>Plataforma de blog construída com Django e PostgreSQL.</p>
+              <div class="card-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                  alt="Django"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL"
+                />
+              </div>
+            </div>
+            <div class="card" data-target="api" data-scroll>
+              <h3>API de Filmes</h3>
+              <p>RESTful API em Node.js consumida por aplicativo mobile.</p>
+              <div class="card-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                  alt="Express"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- páginas internas escondidas -->
+    <section id="tarefas" class="page hidden" data-scroll>
+      <div class="container project-detail">
+        <h2>App de Tarefas</h2>
+        <img src="images/tarefas-detail.png" alt="Detalhe App de Tarefas" />
+        <p>
+          Um gerenciador de tarefas completo criado como demonstração de minhas
+          habilidades fullstack. O front-end foi construído em React com
+          componentes funcionais e hooks; o back-end utiliza Express e MongoDB
+          para persistência de dados.
+        </p>
+        <p>Tecnologias: React, Express, MongoDB, CSS moderno.</p>
+        <p>
+          Funcionalidades incluem cadastro de tarefas, edição, marcação como
+          concluída e filtragem por status. A interface é responsiva e leve.
+        </p>
+        <div class="tech-stack">
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+            />
+            <p>React</p>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+              alt="Express"
+            />
+            <p>Express</p>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB"
+            />
+            <p>MongoDB</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="page hidden" data-scroll>
+      <div class="container project-detail">
+        <h2>Blog Pessoal</h2>
+        <img src="images/blog-detail.png" alt="Detalhe Blog Pessoal" />
+        <p>
+          Plataforma de blog construída com Django e PostgreSQL para demonstrar
+          conhecimento em desenvolvimento fullstack com Python. Inclui painel de
+          administração, criação/edição de posts e comentários.
+        </p>
+        <p>Tecnologias: Django, PostgreSQL, HTML5, CSS3.</p>
+        <p>
+          O design é minimalista e focado em legibilidade; a aplicação foi
+          equipada para suportar múltiplos autores e categorias.
+        </p>
+        <div class="tech-stack">
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+              alt="Django"
+            />
+            <p>Django</p>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL"
+            />
+            <p>PostgreSQL</p>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"
+            />
+            <p>HTML5</p>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"
+            />
+            <p>CSS3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="api" class="page hidden" data-scroll>
+      <div class="container project-detail">
+        <h2>API de Filmes</h2>
+        <img src="images/api-detail.png" alt="Detalhe API de Filmes" />
+        <p>
+          API RESTful desenvolvida em Node.js com Express e MongoDB. Fornece
+          endpoints para buscar, criar, atualizar e remover informações de
+          filmes e avaliações.
+        </p>
+        <p>Tecnologias: Node.js, Express, MongoDB, JWT para autenticação.</p>
+        <p>
+          Ideal para consumo por aplicações web ou mobile, a API foi documentada
+          usando Swagger/OpenAPI e possui testes automatizados.
+        </p>
+        <div class="tech-stack">
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+            />
+            <p>Node.js</p>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+              alt="Express"
+            />
+            <p>Express</p>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB"
+            />
+            <p>MongoDB</p>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jwt/jwt-original.svg"
+              alt="JWT"
+            />
+            <p>JWT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="page hidden" data-scroll>
+      <div class="container">
+        <section id="contato-section">
+          <h2>Entre em contato</h2>
+          <form
+            action="mailto:joao@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2026 Dev Kaio Ribeiro</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
