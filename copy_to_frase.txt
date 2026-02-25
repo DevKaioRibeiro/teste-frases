@@ -1,5 +1,22 @@
-Hello, Wordl!
+Esse arquivo é uma copia do arquivo frase.txt
 
-I'm development
+Aqui usei os comandos:
 
-New frases
+# Puxei tudo do GitHub
+- git pull 
+
+# Testando o comando git push para ver se tem algo para enviar para o GitHub
+git push
+
+#Havendo algo para mandar
+git status
+
+#Enviando para GitHub
+git add nome_do_arquivo
+
+git commit -m "nome do commit"
+
+git push
+
+
+
